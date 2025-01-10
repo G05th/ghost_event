@@ -3,8 +3,6 @@
 @section('title', 'GHOST Events')
 
 @section('content')
-
-
 <div id="search-container" class="col-md-12">
     <h1>Busque um Evento</h1>
     <form action="">
@@ -18,14 +16,14 @@
     <div id="cards-container" class="row">
         @foreach($events as $event)
         <div class="card col-md-3">
-                <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
-                <div class="card-body">
+            <img src="/img/events/{{$event->image}}" alt="{{$event->title}}">
+            <div class="card-body">
                 <p class="card-date">10/09/2020</p>
                 <h5 class="card-title">{{ $event->title }}</h5>
                 <p class="card-participants">X Participantes</p>
-                <a href="#" class="btn btn-primary">Saber mais</a>
-                </div>
+                <a href="/event/{{$event->id}}" class="btn btn-primary">Saber mais</a>
             </div>
+        </div>
         @endforeach
     </div>
 </div>
