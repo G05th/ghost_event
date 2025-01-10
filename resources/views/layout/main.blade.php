@@ -58,7 +58,7 @@
             </div>
         </main>
         <footer>
-            <p>HDC events &copy; 2025</p>
+            <p>GHOST events &copy; 2025</p>
         </footer>
             
     </body>
